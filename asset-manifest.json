@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/domashka_ot_ignata/static/css/main.41cb32ab.css",
-    "main.js": "/domashka_ot_ignata/static/js/main.9677011a.js",
+    "main.css": "/domashka_ot_ignata/static/css/main.709bb954.css",
+    "main.js": "/domashka_ot_ignata/static/js/main.f9e004fd.js",
     "index.html": "/domashka_ot_ignata/index.html",
-    "main.41cb32ab.css.map": "/domashka_ot_ignata/static/css/main.41cb32ab.css.map",
-    "main.9677011a.js.map": "/domashka_ot_ignata/static/js/main.9677011a.js.map"
+    "main.709bb954.css.map": "/domashka_ot_ignata/static/css/main.709bb954.css.map",
+    "main.f9e004fd.js.map": "/domashka_ot_ignata/static/js/main.f9e004fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.41cb32ab.css",
-    "static/js/main.9677011a.js"
+    "static/css/main.709bb954.css",
+    "static/js/main.f9e004fd.js"
   ]
 }
