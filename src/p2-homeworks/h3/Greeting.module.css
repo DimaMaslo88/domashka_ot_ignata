@@ -1,0 +1,15 @@
+.someClass {
+
+}
+
+.error {
+    color:red;
+
+}
+
+.input{
+border: 2px solid black;
+}
+.errorInput{
+    border: 2px solid red;
+}

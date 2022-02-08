@@ -1,0 +1,56 @@
+
+
+
+.speech{
+
+    position: relative;
+    left: 90px;
+    bottom: 60px;
+    width: 250px;
+    height:90px;
+        text-align: center;
+    background-color: rgba(0, 0, 0, 0.95);
+
+    -webkit-border-radius: 13px;
+
+
+}
+.speech:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent #000000 transparent;
+    top: 89%;
+    left: -10px;
+    margin-top: -10.5px;
+    transform: rotate(360deg);
+}
+
+.name{
+    position: relative;
+    right: 30px;
+    color: blue;
+    font-size: 20px;
+}
+.message_1{
+    position: relative;
+    top: 7px;
+    color:white;
+    font-family: Calibri;
+}
+.time{
+    position: relative;
+    top:10px;
+    left: 60px;
+    color: crimson;
+}
+.ava img {
+    position: relative;
+    top: 50px;
+    width: 70px;
+   border-radius:50%;
+}

@@ -1,0 +1,34 @@
+/*.junior{*/
+/*    color: black;*/
+/*}*/
+.junior{
+    color: rgb(0, 7, 14);
+    font-size:100%;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.junior:hover{
+    color : #b2aa0b;
+}
+.junior:active{
+    color: #200be8;
+}
+/*.block{*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    border-radius: 4px;*/
+/*    margin: 10px;*/
+/*    background-color: #600c6c;*/
+
+/*}*/
+.Header{
+    display: flex;
+    width: 200px;
+    transition-duration: 1100ms;
+    transform: translate(-200px);
+}
+.Header:hover{
+    transition-duration: 1100ms;
+    transform: translate(0);
+}
