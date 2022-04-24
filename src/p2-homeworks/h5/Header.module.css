@@ -28,7 +28,16 @@
     transition-duration:1500ms;
     transform: translate(-200px);
 }
+
+
 .Header:hover{
     transition-duration: 1500ms;
     transform: translate(0);
+
 }
+.photo{
+    width:30px;
+    height: 30px;
+}
+
+

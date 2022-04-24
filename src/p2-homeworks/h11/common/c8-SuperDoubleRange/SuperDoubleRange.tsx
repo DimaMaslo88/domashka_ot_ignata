@@ -3,6 +3,10 @@ import React from 'react'
 type SuperDoubleRangePropsType = {
     onChangeRange?: (value: [number, number]) => void
     value?: [number, number]
+    // min:number
+    // max:number
+    // step:number
+    // disabled:any
     // min, max, step, disable, ...
 }
 
@@ -16,7 +20,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
 
     return (
         <>
-            DoubleRange
+            <input type={'range'}/>
         </>
     )
 }
