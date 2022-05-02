@@ -2,7 +2,9 @@ import React, {useState} from 'react'
 import {checkUsersAC, homeWorkReducer, sortUsersDownAC, sortUsersUpAC} from './bll/homeWorkReducer'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 import s from '../h8/bll/HW8.module.css'
-
+import {useSelector} from "react-redux";
+import {AppStoreType} from "../h10/bll/store";
+import style from "../h12/HW12.module.css"
 export type UserType = {
     _id: number
     name: string
@@ -20,7 +22,7 @@ const initialPeople: Array<UserType> = [
 
 function HW8() {
     const [people, setPeople] = useState<Array<UserType>>(initialPeople) // need to fix any
-
+const theme=useSelector<AppStoreType,string>(state=>state.theme.themes)
     // need to fix any
     const finalPeople = people.map((p: UserType) => (
         <div className={s.style}
@@ -35,7 +37,7 @@ function HW8() {
     const chekedAge = () => setPeople(homeWorkReducer(initialPeople, checkUsersAC()))
 
     return (
-        <div>
+        <div className={style[theme]}>
             <hr/>
             homeworks 8
 
