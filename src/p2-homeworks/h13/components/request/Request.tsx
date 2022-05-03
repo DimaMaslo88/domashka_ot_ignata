@@ -1,20 +1,20 @@
 import React, {ChangeEvent, useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {AppStoreType} from "../../../h10/bll/store";
-import {CreatePost, StateType} from "../../bll/request-reducer";
+import {CreatePost, requestAC, StateType} from "../../bll/request-reducer";
 
 
 export const Request = () => {
     const dispatch = useDispatch()
-    const error=useSelector<AppStoreType,string>(state=>state.request.errorText)
-
-    const [check, setCheck] = useState<boolean>(false)
+    const error = useSelector<AppStoreType, string>(state => state.request.errorText)
+    const check = useSelector<AppStoreType, boolean>(state => state.request.success)
+    // const [check, setCheck] = useState<boolean>(false)
     const takeRequest = () => {
         dispatch(CreatePost(check))
     }
 
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-        setCheck(e.currentTarget.checked)
+        dispatch(requestAC(e.currentTarget.checked))
     }
     //
     // const errorRes=()=>{
@@ -28,7 +28,10 @@ export const Request = () => {
                    checked={check}
                    onChange={onChangeHandler}
             />
-            <div>responce:{error}</div>
+            <div>responce:
+                {error}
+
+            </div>
         </div>
     );
 };
