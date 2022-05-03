@@ -39,19 +39,21 @@ const theme=useSelector<AppStoreType,string>(state=>state.theme.themes)
     return (
         <div className={style[theme]}>
             <hr/>
+            <span className={style[theme+"-text"]}>
             homeworks 8
 
             {/*should work (должно работать)*/}
             {finalPeople}
 
-            <div><SuperButton onClick={sortUp} >sort up</SuperButton>
+            <div ><SuperButton onClick={sortUp} >sort up</SuperButton>
                 <SuperButton onClick={sortDown}>sort down</SuperButton>
                 <SuperButton onClick={chekedAge}>check 18</SuperButton>
             </div>
-
+        </span>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativePeople/>*/}
+
             <hr/>
         </div>
     )

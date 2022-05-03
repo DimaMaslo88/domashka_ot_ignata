@@ -13,6 +13,7 @@ function HW7() {
     return (
         <div className={s[theme]}>
             <hr/>
+          <span  className={s[theme + '-text']}>
             homeworks 7
 
             {/*should work (должно работать)*/}
@@ -31,7 +32,7 @@ function HW7() {
                     onChangeOption={onChangeOption}
                 />
             </div>
-
+          </span>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperSelect/>*/}
