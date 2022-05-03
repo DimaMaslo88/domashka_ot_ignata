@@ -8,18 +8,15 @@ export const Request = () => {
     const dispatch = useDispatch()
     const error = useSelector<AppStoreType, string>(state => state.request.errorText)
     const check = useSelector<AppStoreType, boolean>(state => state.request.success)
-    // const [check, setCheck] = useState<boolean>(false)
-    const takeRequest = () => {
+
+    const takeRequest = () => { //использую ThunkCreator
         dispatch(CreatePost(check))
     }
 
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         dispatch(requestAC(e.currentTarget.checked))
     }
-    //
-    // const errorRes=()=>{
-    //     if()
-    // }
+
 
     return (
         <div>
@@ -28,10 +25,8 @@ export const Request = () => {
                    checked={check}
                    onChange={onChangeHandler}
             />
-            <div>responce:
-                {error}
+            <div> responce:{error} </div>
 
-            </div>
         </div>
     );
 };
